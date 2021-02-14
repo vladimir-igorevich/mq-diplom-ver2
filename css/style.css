@@ -419,7 +419,7 @@ body::before {
 
 @media (max-width: 640px) {
     .header {
-        background-image: url("/images/banner-mobile.jpg");
+        background-image: url(images/banner-mobile.jpg);
         padding: 0;
     }
 
@@ -469,7 +469,7 @@ body::before {
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .header {
-        background-image: url("/images/banner-bg-tablet.jpg");
+        background-image: url(images/banner-bg-tablet.jpg);
         padding: 50px 0 0 0;
     }
 
@@ -512,7 +512,7 @@ body::before {
 
 @media (min-width: 1200px) {
     .header {
-        background-image: url("/images/banner-bg.jpg");
+        background-image: url(images/banner-bg.jpg);
         padding: 28px 0 0 0;
     }
 
