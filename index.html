@@ -10,43 +10,49 @@
 <body>
 
 
-    <div class="popup-place">
-        <a href="#0" class="close-btn"></a>
-        <div class="popup-sector">
-            <form class="popup">
-                <h2 class="popup-title">Ваш фидбек</h2>
-                <div class="form-item select">
-                    <label class="form-group">
-                        <span class="question">Как часто вы заходите на сайт?</span>
-                        <select class="field">
-                            <option class="field-item"> Почти каждый день</option>
-                            <option class="field-item"> Раз в несколько дней</option>
-                            <option class="field-item"> Раз в несколько недель</option>
-                            <option class="field-item"> Несколько раз в год</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="form-item radio">
-                    <span class="question">Вы подписаны на e-mail подписку?</span>
-                    <label class="form-row">
-                        <input class="form-hint" type="radio" name="radio-choice">
-                        <span class="form-text">Да</span>
-                    </label>
-                    <label class="form-row">
-                        <input class="form-hint" type="radio" name="radio-choice">
-                        <span class="form-text">Нет</span>
-                    </label>
-                </div>
-                <div class="form-item textarea">
-                    <label class="form-group">
-                        <span class="textarea-question"> Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                        <textarea class="text-place" placeholder="Может, больше рецептов?"></textarea>
-                    </label>
-                </div>
-                <div class="form-item button">
-                    <button type="submit" class="form-button">Отправить</button>
-                </div>
-            </form>
+    <div class="popup">
+        <div class="popup-block">
+            <a href="#0" class="close-btn">
+                <svg viewBox="0 0 441 441" class="close-btn-img">
+                    <path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z" />
+                </svg>
+            </a>
+            <div class="popup-sector">
+                <form class="popup-form">
+                    <h2 class="popup-title">Ваш фидбек</h2>
+                    <div class="form-item select">
+                        <label class="form-group">
+                            <span class="question">Как часто вы заходите на сайт?</span>
+                            <select class="field">
+                                <option class="field-item"> Почти каждый день</option>
+                                <option class="field-item"> Раз в несколько дней</option>
+                                <option class="field-item"> Раз в несколько недель</option>
+                                <option class="field-item"> Несколько раз в год</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-item radio">
+                        <span class="question">Вы подписаны на e-mail подписку?</span>
+                        <label class="form-row">
+                            <input class="form-hint" type="radio" name="radio-choice">
+                            <span class="form-text">Да</span>
+                        </label>
+                        <label class="form-row form-row-last">
+                            <input class="form-hint" type="radio" name="radio-choice">
+                            <span class="form-text">Нет</span>
+                        </label>
+                    </div>
+                    <div class="form-item textarea">
+                        <label class="form-group">
+                            <span class="textarea-question"> Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                            <textarea class="text-place" placeholder="Может, больше рецептов?"></textarea>
+                        </label>
+                    </div>
+                    <div class="form-item button">
+                        <button type="submit" class="form-button">Отправить</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -69,7 +75,7 @@
                 </a>
                 <nav class="menu">
                     <ul class="menu-list">
-                        <li class="menu-list-item">
+                        <li class="menu-list-item menu-list-item-first">
                             <a href="#0" class="menu-link">главная</a>
                         </li>
                         <li class="menu-list-item">
@@ -90,18 +96,18 @@
                     </ul>
                 </nav>
                 <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class="menu-btn" for="menu-toggle">
                         <span class="burger-text"></span>
                     </label>
 
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="#">Главная</a></li>
-                        <li><a class="menu__item" href="#">Посты</a></li>
-                        <li><a class="menu__item" href="#">Статьи</a></li>
-                        <li><a class="menu__item" href="#">Теги</a></li>
-                        <li><a class="menu__item" href="#">Темы</a></li>
-                        <li><a class="menu__item" href="#">Контакты</a></li>
+                    <ul class="menu-box">
+                        <li><a class="menu-item" href="#">Главная</a></li>
+                        <li><a class="menu-item" href="#">Посты</a></li>
+                        <li><a class="menu-item" href="#">Статьи</a></li>
+                        <li><a class="menu-item" href="#">Теги</a></li>
+                        <li><a class="menu-item" href="#">Темы</a></li>
+                        <li><a class="menu-item" href="#">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -110,19 +116,19 @@
         </div>
     </header>
     <section class="trends">
-        <h2 class="trends__title">
+        <h2 class="trends-title">
             Сейчас в тренде
         </h2>
-        <div class="trends__content">
-            <article class="trends__block">
+        <div class="trends-content">
+            <article class="trends-block">
                 <img src="images/trend1.jpg" alt="trend-1" class="trend-img">
                 <div class="block">
                     <ul class="block-list">
                         <li class="list">
-                            <a href="#0" class="list__link">lifestyle</a>
+                            <a href="#0" class="list-link">lifestyle</a>
                         </li>
                         <li class="list">
-                            <a href="#0" class="list__link">interior</a>
+                            <a href="#0" class="list-link">interior</a>
                         </li>
                     </ul>
                     <h3 class="block-title">
@@ -130,12 +136,12 @@
                     </h3>
                 </div>
             </article>
-            <article class="trends__block">
+            <article class="trends-block">
                 <img src="images/trend2.jpg" alt="trend-2" class="trend-img">
                 <div class="block">
                     <ul class="block-list">
                         <li class="list">
-                            <a href="#0" class="list__link">food</a>
+                            <a href="#0" class="list-link">food</a>
                         </li>
                     </ul>
                     <h3 class="block-title">
@@ -143,15 +149,15 @@
                     </h3>
                 </div>
             </article>
-            <article class="trends__block">
+            <article class="trends-block">
                 <img src="images/trend3.jpg" alt="trend-3" class="trend-img">
                 <div class="block">
                     <ul class="block-list">
                         <li class="list">
-                            <a href="#0" class="list__link">lifestyle</a>
+                            <a href="#0" class="list-link">lifestyle</a>
                         </li>
                         <li class="list">
-                            <a href="#0" class="list__link">travel</a>
+                            <a href="#0" class="list-link">travel</a>
                         </li>
                     </ul>
                     <h3 class="block-title">
@@ -159,15 +165,15 @@
                     </h3>
                 </div>
             </article>
-            <article class="trends__block">
+            <article class="trends-block">
                 <img src="images/trend4.jpg" alt="trend-4" class="trend-img">
                 <div class="block">
                     <ul class="block-list">
                         <li class="list">
-                            <a href="#0" class="list__link">food</a>
+                            <a href="#0" class="list-link">food</a>
                         </li>
                         <li class="list">
-                            <a href="#0" class="list__link">health</a>
+                            <a href="#0" class="list-link">health</a>
                         </li>
                     </ul>
                     <h3 class="block-title">
@@ -276,7 +282,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="post-list-item">
+                <article class="post-list-item post-list-item-last">
                     <img src="images/last-post5.jpg" alt="post-five" class="post-picture">
                     <div class="frame">
                         <ul class="frame-category">
@@ -347,7 +353,7 @@
                             </h4>
                         </div>
                     </article>
-                    <article class="latest-post-item">
+                    <article class="latest-post-item post-item-end">
                         <img src="images/7.jpg" alt="latest-image-five" width="70" class="latest-post-picture">
                         <div class="latest-frame">
                             <time datetime="14-06-2019" class="date-item">14 июня 2019</time>
@@ -413,7 +419,7 @@
 
                     </ul>
                 </section>
-                <section class="latest-post-list">
+                <section class="latest-post-list post-list-end">
                     <h3 class="theme-title">Темы</h3>
                     <ul class="theme-list">
                         <li class="list-item">
@@ -443,9 +449,9 @@
 
     <section class="shop">
         <div class="shop_wraper">
-            <h3 class="shop__title">Наши изделия</h3>
-            <div class="shop__content">
-                <article class="shop__item">
+            <h3 class="shop-title">Наши изделия</h3>
+            <div class="shop-content">
+                <article class="shop-item">
                     <picture class="item-img">
                         <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
                         <source media="(min-width: 641px)" srcset="images/shop-item-tablet1.jpg">
@@ -464,7 +470,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="shop__item">
+                <article class="shop-item">
                     <picture class="item-img">
                         <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
                         <source media="(min-width: 641px)" srcset="images/shop-item-tablet2.jpg">
@@ -483,7 +489,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="shop__item">
+                <article class="shop-item shop-item-last">
                     <picture class="item-img">
                         <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
                         <source media="(min-width: 641px)" srcset="images/shop-item-tablet3.jpg">
@@ -562,7 +568,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social-item social-item-last">
                         <a href="#0" class="social-link tumblr">
                             <span class="link-text">tumblr</span>
                             <svg viewBox="0 0 310 310" class="tumblr-img">
@@ -586,6 +592,4 @@
         </div>
     </footer>
 
-</body>
-
-</html>
+</body></html>
