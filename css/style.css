@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Open Sans";
-    src: url("/fonts/OpenSans-Bold.woff");
+    src: url(/fonts/OpenSans-Bold.woff");
     src: url("/fonts/OpenSans-Bold.woff2");
     src: url("/fonts/OpenSans-Bold.ttf");
     font-weight: 700;
@@ -186,7 +186,7 @@ body {
     display: block;
     height: 48px;
     padding: 10px 20px;
-    background-image: url(svg/form-arrows.svg);
+    background-image: url(../svg/form-arrows.svg);
     background-size: 8px;
     background-repeat: no-repeat;
     background-position: right 10px top 50%;
@@ -221,7 +221,7 @@ body {
     position: absolute;
     width: 15px;
     height: 15px;
-    background-image: url(svg/form-empty-circle.svg);
+    background-image: url(../svg/form-empty-circle.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -252,7 +252,7 @@ body {
 
 
 .form-hint:checked ~ .form-text:before {
-    background-image: url(svg/form-circle.svg);
+    background-image: url(../svg/form-circle.svg);
 }
 
 
@@ -407,7 +407,7 @@ body {
 
 @media (max-width: 640px) {
     .header {
-        background-image: url(images/banner-mobile.jpg);
+        background-image: url(../images/banner-mobile.jpg);
         padding: 0;
     }
 
@@ -457,7 +457,7 @@ body {
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .header {
-        background-image: url(images/banner-bg-tablet.jpg);
+        background-image: url(../images/banner-bg-tablet.jpg);
         padding: 50px 0 0 0;
     }
 
@@ -500,7 +500,7 @@ body {
 
 @media (min-width: 1200px) {
     .header {
-        background-image: url(images/banner-bg.jpg);
+        background-image: url(../images/banner-bg.jpg);
         padding: 28px 0 0 0;
     }
 
